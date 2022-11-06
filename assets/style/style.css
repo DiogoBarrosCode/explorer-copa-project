@@ -125,12 +125,20 @@ header {
 }
 
 
+/*responsividade*/
 
+@media (min-width: 700px) {
+    #cards {
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
-
-
-
-
-
-
-
+@media (min-width: 1070px) {
+    #cards {
+        max-width: 1012px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
