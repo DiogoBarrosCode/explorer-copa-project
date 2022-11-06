@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+:root {
+    --card-color-primary: #F7DD43;
+    --card-bottom-color: #746615;
+    --card-bg-color: #1D1C19;
+    --bg: url(../svg/bg-yellow.svg);
+}
+
+body.blue {
+    --card-color-primary: #338AF3;
+    --card-bottom-color: #338AF3;
+    --card-bg-color: #202024;
+    --bg: url(../svg/bg-blue.svg);
+}
+
+body.green {
+    --card-color-primary: #047C3F;
+    --card-bottom-color: #047C3F;
+    --card-bg-color: #1A1F1B;
+    --bg: url(../svg/bg-green.svg);
+}
+
 ul {
     list-style: none;
 }
@@ -14,15 +35,17 @@ body * {
 
 body {
     background-color: #121214;
-    background-image: url(../svg/bg-blue.svg);
-    background-position-x: center;
-    background-position-y: -715px;
+    background-image: var(--bg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 #app {
     width: fit-content;
-    margin: 52px auto;
+    margin: auto;
+    padding-top: 52px;
 }
 
 header {
@@ -39,8 +62,8 @@ header {
 .card {
     padding: 32px 23px;
     text-align: center;
-    background: #1D1C19;
-    border-bottom: 2px solid #F7DD43;
+    background: var(--card-bg-color);
+    border-bottom: 2px solid var(--card-color-primary);
     border-radius: 6px;
 }
 
@@ -50,7 +73,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    border: 1px solid #746615;
+    border: 1px solid var(--card-bottom-color);
     padding: 8px 16px;
     border-radius: 6px;
 
