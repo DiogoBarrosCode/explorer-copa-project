@@ -23,18 +23,11 @@ function createCard(date, day, games) {
     `
 }
 
-document.querySelector('#app').innerHTML = `
+document.querySelector('#cards').innerHTML = 
 
-    <header>
-        <img src="./assets/svg/logo.svg" alt="">
-    </header>
+    createCard('24/11', 'quinta', 
+    createGame('brazil', '16:00', 'cameroon') + 
+    createGame('brazil', '16:00', 'cameroon')) 
+    +
+    createCard('28/11', 'sexta', createGame('cameroon', '08:00', 'brazil'))
 
-    <main id="cards">
-        ${createCard('24/11', 'quinta', 
-        createGame('brazil', '16:00', 'cameroon') + 
-        createGame('brazil', '16:00', 'cameroon'))}
-
-        ${createCard('28/11', 'sexta', createGame('cameroon', '08:00', 'brazil'))}
-    </main>
-
-`
