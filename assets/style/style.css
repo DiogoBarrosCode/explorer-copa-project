@@ -111,19 +111,33 @@ header {
 
 .card ul li strong {
     font-weight: 900;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 125%;
     color: #E1E1E6;
 }
 
+.card ul li .hour {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--card-color-primary);
+}
+
+.card ul li .player{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #E1E1E6;
+}
+
 .card h2:hover,
-.card ul li strong:hover,
+.card ul li .hour:hover,
+.card ul li .player:hover,
 .card ul li img:hover {
     transform: scale(1.1);
 }
 
 .card h2,
-.card ul li strong,
+.card ul li .hour,
+.card ul li .player,
 .card ul li img {
     transition: transform 0.3s;
 }
