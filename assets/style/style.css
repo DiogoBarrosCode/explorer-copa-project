@@ -8,21 +8,21 @@
     --card-color-primary: #F7DD43;
     --card-bottom-color: #746615;
     --card-bg-color: #1D1C19;
-    --bg: url(../svg/bg-yellow.svg);
+    --bg: url(../svg/bg/bg-yellow.svg);
 }
 
 body.blue {
     --card-color-primary: #338AF3;
     --card-bottom-color: #338AF3;
     --card-bg-color: #202024;
-    --bg: url(../svg/bg-blue.svg);
+    --bg: url(../svg/bg/bg-blue.svg);
 }
 
 body.green {
     --card-color-primary: #047C3F;
     --card-bottom-color: #047C3F;
     --card-bg-color: #1A1F1B;
-    --bg: url(../svg/bg-green.svg);
+    --bg: url(../svg/bg/bg-green.svg);
 }
 
 ul {
@@ -57,6 +57,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    padding-bottom: 64px;
 }
 
 .card {
